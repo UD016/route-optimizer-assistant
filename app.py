@@ -42,6 +42,8 @@ from streamlit_folium import st_folium
 import pandas as pd
 import requests
 
+from service_assistant import ask_service_assistant
+
 from timesheet import show_timesheet
 
 from zoneinfo import ZoneInfo
@@ -192,10 +194,11 @@ def recency_color(ts: Optional[str]) -> Tuple[str, str]:
 # Google Maps key
 # ────────────────────────────────────────────────────────────────
 GOOGLE_KEY = secret("GOOGLE_MAPS_API_KEY")
-if not GOOGLE_KEY:
-    st.error("Missing Google Maps key. Add it in **App settings → Secrets** as `GOOGLE_MAPS_API_KEY`.")
-    st.stop()
-gmaps_client = googlemaps.Client(key=GOOGLE_KEY)
+
+if GOOGLE_KEY:
+    gmaps_client = googlemaps.Client(key=GOOGLE_KEY)
+else:
+    gmaps_client = None
 
 # ────────────────────────────────────────────────────────────────
 # Geocoding helpers (CACHED — inchangé)
@@ -351,7 +354,17 @@ def add_labeled_marker(fmap: folium.Map, lat: float, lon: float, label: str, kin
 # ────────────────────────────────────────────────────────────────
 # PAGE 1 (Route Optimizer) — logique inchangée
 # ────────────────────────────────────────────────────────────────
+
 def render_page_1():
+
+    if gmaps_client is None:
+
+        st.warning(
+            "Google Maps is disabled for this test."
+        )
+
+        return
+
     cummins_header()
 
     st.markdown("### Travel options")
@@ -930,6 +943,48 @@ def render_page_1():
                 st.warning(f"Map rendering skipped: {e}")
 
         st.success(f"**Total distance:** {km:.1f} km • **Total time:** {mins:.0f} mins (live traffic)")
+
+
+def render_service_assistant():
+    st.markdown("### 🤖 Service Coordinator Assistant")
+    st.caption("Ask dispatch, technician selection, booking, troubleshooting, and invoicing questions.")
+
+    if "assistant_messages" not in st.session_state:
+        st.session_state.assistant_messages = [
+            {"role": "assistant", "content": "Bonjour — posez votre question."}
+        ]
+
+    clear_col, _ = st.columns([1, 5])
+    with clear_col:
+        if st.button("🗑️ Clear conversation", key="assistant_clear"):
+            st.session_state.assistant_messages = [
+                {"role": "assistant", "content": "Bonjour — posez votre question."}
+            ]
+            st.rerun()
+
+    for msg in st.session_state.assistant_messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+    question = st.chat_input("Ask a service question...", key="assistant_chat_input")
+
+    if question:
+        st.session_state.assistant_messages.append(
+            {"role": "user", "content": question}
+        )
+
+        with st.chat_message("assistant"):
+            with st.spinner("Analyzing request..."):
+                try:
+                    answer = ask_service_assistant(question)
+                except Exception as e:
+                    answer = f"Sorry — I hit an error: {type(e).__name__}: {e}"
+                st.markdown(answer)
+
+        st.session_state.assistant_messages.append(
+            {"role": "assistant", "content": answer}
+        )
+        st.rerun()
 
 # ────────────────────────────────────────────────────────────────
 # PAGE 2 (Planning)
@@ -4107,7 +4162,19 @@ def render_page_2():
 # ────────────────────────────────────────────────────────────────
 if page == "🏠 Route Optimizer":
     render_page_1()
+
+    st.divider()
+
+    with st.expander(
+        "🤖 Service Coordinator Assistant",
+        expanded=False
+    ):
+        render_service_assistant()
+
 elif page == "📅 Planning (Page 2)":
     render_page_2()
+
 elif page == "⏱ Feuille de temps":
     show_timesheet()
+
+
