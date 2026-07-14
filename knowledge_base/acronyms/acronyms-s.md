@@ -1,15 +1,18 @@
 # Company Acronyms - S
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -66,6 +69,7 @@ This document contains company acronyms beginning with the letter specified in t
 | SCU | Sensor Control Unit |
 | SDAS | Structural, Dynamic and Acoustic Systems |
 | SDB | Service Database |
+| SDC | Strategic Data Center |
 | SDD | Solution Design Document |
 | SDL | Sudden Deceleration Log |
 | SDLC | Software Development Life Cycle |
@@ -128,6 +132,7 @@ This document contains company acronyms beginning with the letter specified in t
 | SMT | Smart Manual Transmission |
 | SNAAG | Special Needs and Abilities Affinity Group |
 | SO | Sales Order |
+| SOA | Service Operations Academy |
 | SOA | Service Operation Training |
 | SOC | State of Charge |
 | SOD | Start of Development |
@@ -147,6 +152,7 @@ This document contains company acronyms beginning with the letter specified in t
 | SOT | Start Of Test |
 | SOTL | Sold On Top Level |
 | SOV | Shut-Off Valve |
+| SOW | Scope of Work |
 | SOW | Statement of Work |
 | SOX | Sarbanes Oxley |
 | SP | Special Products |

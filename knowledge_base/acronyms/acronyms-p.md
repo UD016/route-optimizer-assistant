@@ -1,15 +1,18 @@
 # Company Acronyms - P
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -89,6 +92,7 @@ This document contains company acronyms beginning with the letter specified in t
 | PFMEA | Process Failure Mode & Effect Analysis |
 | PFR | Planning, Forecasting, Reporting |
 | PFS | Particulate Filter System |
+| PG | Power Generation |
 | PGBU | Power Generation Business Unit |
 | PGM | Precious Group Metal |
 | PGS | Predictive Gear Shift |
@@ -97,6 +101,7 @@ This document contains company acronyms beginning with the letter specified in t
 | PIB | Power Interlock Board |
 | PIC | Pilot Installation Center |
 | PID | Proportional Integral Derivative Controller |
+| PIP | Paper in Process |
 | PIP | Performance Improvement Plan |
 | PIR | Product Incident Report |
 | PITS | Product Improvement Technical Summary |
@@ -113,6 +118,7 @@ This document contains company acronyms beginning with the letter specified in t
 | PLT | Plant Leadership Team |
 | PM | Particulate matter |
 | PM | Planned Maintenance |
+| PM | Prime Margin |
 | PM | Project Manager |
 | PM BLDC | Permanent Magnet Brushless Direct Current |
 | PMA | Planned Maintenance Agreement |
@@ -124,15 +130,16 @@ This document contains company acronyms beginning with the letter specified in t
 | PMM | Post Manufacturer Marinizers |
 | PMSC | Particulate Matter Sensor Control |
 | PMSM | Permanent Magnet Synchronous Motor |
-| PMR | Planned Maintenance Residual |
-| PMR ASAP | Planned Maintenance Residual As Soon As Possible |
-| PMR EMERGENT | Planned Maintenance Residual Emergent |
+| PMR | Planned Equipment Maintenance Residual |
 | PMU | Pack Management Unit |
-| PMVA | Planned Maintenance Value Added |
+| PMVA | Planned Equipment Maintenance Value Added |
+| PMWO | Planned Equipment Maintenance Work Order |
 | PN | Part Number |
 | PNC | Process Non Conformance |
 | PO | Purchase Order |
+| POA | Parts Operation Academy |
 | POAM | Plan of Action and Milestones |
+| POC | Point of Contact |
 | POC | Proof of Concept |
 | POC | Particulate Oxidation Catalyst |
 | POD | Probability of Detection |

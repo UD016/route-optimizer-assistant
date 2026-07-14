@@ -1,15 +1,18 @@
 # Company Acronyms - O
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -40,6 +43,7 @@ This document contains company acronyms beginning with the letter specified in t
 | ODR | Organizational Development Review |
 | ODX | Open Diagnostic Data Exchange |
 | OE | Operations Excellence |
+| OE | Order Entry |
 | OECD | Organization for Economic Cooperation and Development |
 | OEE | Operational Equipment Effectiveness |
 | OEM | Original Equipment Manufacturer |
@@ -52,6 +56,7 @@ This document contains company acronyms beginning with the letter specified in t
 | OFT | Oil and Fuel Transfer |
 | OH | overhauling |
 | OIM | Oracle Identity Managment |
+| OJT | On-the-job Training |
 | OLT | Oscillating Load Test |
 | OLY | Olympic Building |
 | OMC | outbound material control |

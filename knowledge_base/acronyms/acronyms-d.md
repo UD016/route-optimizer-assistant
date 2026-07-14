@@ -1,15 +1,18 @@
 # Company Acronyms - D
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -33,6 +36,7 @@ This document contains company acronyms beginning with the letter specified in t
 | DBJ | Design practice for Bolted Joints |
 | DBS | Distribution Business System |
 | DBU | Distribution Business Unit |
+| DC | Direct Current |
 | DCA | Design Control Authorization |
 | DCC | Design Change Configuration |
 | DCEC | Dongfeng Cummins Engine Company |
@@ -42,6 +46,7 @@ This document contains company acronyms beginning with the letter specified in t
 | DCNE | Distributor Corporation of New England |
 | DCPA | Distributor Product Compliance Application |
 | DCR | Design Change Request |
+| DCS | Data Center Support |
 | DCT | Design Change Table |
 | DCU | Doser Control Unit |
 | DD | Device Driver |
@@ -95,6 +100,7 @@ This document contains company acronyms beginning with the letter specified in t
 | DISP | Displacement |
 | DLC | Diamond-Like Coating |
 | DLF | Direct Line Feed |
+| DLT | DBU Leadership Team |
 | DMAIC | Define, Measure, Analyze, Improve & Control |
 | DMC | Daily Machine Checksheet |
 | DMC | Dimensional Metrology Center |
@@ -102,6 +108,7 @@ This document contains company acronyms beginning with the letter specified in t
 | DMS | Document Management System |
 | DN | Distributor Net |
 | DND | Detection and Disablement |
+| DNL | Days No Labor |
 | DNP | Do Not Process |
 | DNV | Det Norske Veritas |
 | DNVH | Driveline NVH |
@@ -149,7 +156,7 @@ This document contains company acronyms beginning with the letter specified in t
 | DSM | Design Structure Matrix |
 | DSM | Diagnostic Subject Model |
 | DSME | Diagnostic Subject Matter Expert |
-| DSO | Days sales outstanding |
+| DSO | Days Sales Outstanding |
 | DSPO | Direct Ship Purchase Order |
 | DSPP | Distributor Sharing Purchase Program |
 | DSPR | Demand Supply Replenishment Program |

@@ -1,15 +1,18 @@
 # Company Acronyms - T
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -21,6 +24,7 @@ This document contains company acronyms beginning with the letter specified in t
 |---------|------------|
 | T&A | Time and Attendance |
 | T&R | Troubleshooting and Repair |
+| T/S | Troubleshooting |
 | T/WHL | Turbine Wheel |
 | T2B5 | Tier 2, Bin 5 |
 | TAF | Transaction Assessment Form |
@@ -118,6 +122,7 @@ This document contains company acronyms beginning with the letter specified in t
 | TTM | Tech Team Meeting and Time To Market |
 | TTR | Test Trip Request |
 | TTT | Top Tank Temperature |
+| TTVM | Testing, Troubleshooing, and Voltage Measurement |
 | TVA | Torsional Variation Analysis |
 | TVP | Total Value of Performance |
 | TWA | ​Tire Wear Adjustment |

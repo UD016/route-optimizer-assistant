@@ -1,15 +1,18 @@
 # Company Acronyms - A
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -38,6 +41,7 @@ This document contains company acronyms beginning with the letter specified in t
 | ABT | Accelerator Based Torque |
 | ABU | Accelera Business Unit |
 | ABYC | American Boat and Yacht Council |
+| AC | Alternating Current |
 | ACA | Advanced Change Authorization |
 | ACC | Adaptive Cruise Control |
 | ACCEPTS | Automated Common Controls Electronic Product Test System |
@@ -71,7 +75,9 @@ This document contains company acronyms beginning with the letter specified in t
 | AEB | Application Engineering Bulletins |
 | AEBS | Advanced Emergency Braking System |
 | AECD | Auxiliary Emission Control Device |
+| AED | Automated External Defibrillator |
 | AEM | Association of Equipment Manufacturers |
+| AES | Advanced Electrical Services |
 | AES | Advanced Encryption Standard |
 | AES | Auxiliary Emission Strategy |
 | AF | Acceleration Factor |
@@ -186,6 +192,7 @@ This document contains company acronyms beginning with the letter specified in t
 | AUTOSAR | AUTomotive Open System ARchitecture |
 | AVL | Approved Vendor List |
 | AVO | Avoid Verbal Order |
+| AVP | Area Vice President |
 | AVR | Automatic Voltage Regulator |
 | AWL | Amber Warning Lamp |
 | AWS | Amazon Web Services |

@@ -1,15 +1,18 @@
 # Company Acronyms - Q
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -40,6 +43,7 @@ This document contains company acronyms beginning with the letter specified in t
 | QSOL | QuickServe OnLine |
 | QSPL | QUALITY STAR POINT LEADER |
 | QSSA | QuickServe Service Analytics |
+| QSSM | QuickServe System Management |
 | QST | Quantum System T Engine |
 | QSX | Quantum System X Engine |
 | QTCT | Quality Target Control Table |

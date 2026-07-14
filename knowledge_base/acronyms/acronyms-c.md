@@ -1,15 +1,18 @@
 # Company Acronyms - C
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -100,6 +103,7 @@ This document contains company acronyms beginning with the letter specified in t
 | CDC | Cummins Diversity Choir |
 | CDC | Consolidated Diesel Company |
 | CDD | Configuration Design Database |
+| CDE | Compliance, Deviations, Exceptions |
 | CDM | CAD Data Management |
 | CDM | Calibration Data Management |
 | CDO | Cummins Digital Organization |
@@ -285,6 +289,7 @@ This document contains company acronyms beginning with the letter specified in t
 | CREO | Product Design Software for Discrete Manufacturers developed by PTC |
 | CRL | Combustion Research Lab |
 | CRM | Cummins Rocky Mountain |
+| CRP | Change Request Portal |
 | CRP | Conference Room Piloting |
 | CRS | Change Request Status |
 | CRTI | Cummins Research and Technology India |
@@ -319,6 +324,7 @@ This document contains company acronyms beginning with the letter specified in t
 | CST | Cummins Swagelok Taskforce |
 | CSTS | Cummins Service Training System |
 | CSU | Connected Software Updates |
+| CT | Current Transformer |
 | CTAS | Cummins Tool Authorization System |
 | CTC | Cummins Technical Center |
 | CTCC | Cummins Technical Center Charleston |
@@ -351,6 +357,7 @@ This document contains company acronyms beginning with the letter specified in t
 | CWK | Contingency Workers |
 | CWO | Cummins Walesboro Operations |
 | CWOBDIM | Change With OBD In Mind |
+| CX | Customer Experience |
 | CYA | Cyanuric acid |
 | CYWM | Cyclopse Wide Mouth |
 | ccDOC | close-coupled Diesel Oxidation Catalyst |

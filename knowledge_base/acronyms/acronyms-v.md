@@ -1,15 +1,18 @@
 # Company Acronyms - V
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -20,6 +23,8 @@ This document contains company acronyms beginning with the letter specified in t
 | Acronym | Definition |
 |---------|------------|
 | V | Voltage |
+| V | Volts |
+| VAC | Volts Alternating Current |
 | VAM | Vehicle acceleration management |
 | VAVE | Value Analysis and Value Engineering |
 | VBD | Value Based Design |

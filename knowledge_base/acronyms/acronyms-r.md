@@ -1,12 +1,15 @@
 # Company Acronyms - R
 
-# Version 1.0.0
+# Version 1.0.1
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
+
+v1.0.1
+- Minor grammatical tweaks.
 
 v1.0.0
 - Creation of initial document.
@@ -57,7 +60,7 @@ This document contains company acronyms beginning with the letter specified in t
 | RFID | Radio Frequency Identification |
 | RFP | Request for Proposal |
 | RFQ | Request for Quote |
-| RFQ | Request for quotation |
+| RFQ | Request for Quotation |
 | RFT | Right First Time |
 | RGA | Return Goods Authorization |
 | RGM | Reduced GT Power Model |

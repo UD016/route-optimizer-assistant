@@ -1,15 +1,18 @@
 # Company Acronyms - B
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -91,6 +94,7 @@ This document contains company acronyms beginning with the letter specified in t
 | BTIF | Building Towards IT's Future |
 | BTM | Back Tempered Martensite |
 | BTMS | Battery Thermal Management System |
+| BTPC | Bypass-Isolation Transfer Switch |
 | BTPM | Business Transformation Process Management |
 | BTU | British Thermal Unit |
 | BU | Business Unit |

@@ -1,15 +1,18 @@
 # Company Acronyms - F
 
-# Version 1.0.0
+# Version 1.1.0
 
-# Last Updated: 2026-07-13
+# Last Updated: 2026-07-14
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.1.0
+- Added acronyms from CSSNA Field Service PowerGen Playbook.
+
 v1.0.0
-- Creation of initial document.
+- Creation of the initial file.
 
 ## Purpose
 
@@ -19,6 +22,7 @@ This document contains company acronyms beginning with the letter specified in t
 
 | Acronym | Definition |
 |---------|------------|
+| FA | FieldAware |
 | FAF | First Average Fill |
 | FAI | First Article Inspection |
 | FAI | First Aid Injury |
@@ -104,8 +108,9 @@ This document contains company acronyms beginning with the letter specified in t
 | FPEPS | Fuel Pump Engine Performance Specifications |
 | FPF | First Pass Fill (shown as a percentage) |
 | FPFP | First Pass Fill Percentage |
-| FR | Fuel Rating |
+| FR | Flame Resistant |
 | FR | Flow Resistance |
+| FR | Fuel Rating |
 | FRA | Federal Railroad Administration |
 | FRACAS | Failure, Reporting, Analysis and Corrective Action System |
 | FRG | Functional Review Group |
@@ -114,6 +119,7 @@ This document contains company acronyms beginning with the letter specified in t
 | FRMC | Financial Risk Management Committee |
 | FRU | Field Replaceable Unit |
 | FRV | Function Reliability Validation |
+| FS | Field Service |
 | FS-ASIC | Fuel System-Analog Simulation Integrated Circuit |
 | FSA | Facility Service Agreement |
 | FSA | Flexible Spending Account |
@@ -122,6 +128,7 @@ This document contains company acronyms beginning with the letter specified in t
 | FSBU | Fuel Systems Business Unit |
 | FSC | Fault, Set, Clear |
 | FSD | Fuel System Driver |
+| FSE | Field Service Engine |
 | FSE | First Service Event |
 | FSF | First Ship Fill |
 | FSJ | Fuel Systems Juarez Plant |
