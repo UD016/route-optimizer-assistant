@@ -12,6 +12,9 @@ v1.0.1
 - Removal of recommendations.
 - Separation of technical expertise and Cummins qualifications.
 
+v1.0.0
+- Creation of initial document.
+
 ## Purpose
 
 This document provides factual reference information for all service technicians within the branch.

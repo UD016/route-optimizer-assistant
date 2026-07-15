@@ -1,5 +1,22 @@
 # Job Booking
 
+# Version 1.1.0
+
+# Last Updated: 2026-07-15
+
+# Updated By: Jipeng Li
+
+# Change Log:
+
+v1.1.0
+- Merged a significant portion of the file "Taking a customer call" into the current job booking file.
+
+v1.0.1
+- Added minor details
+
+v1.0.0
+- Creation of initial document.
+
 ## Purpose
 
 The Job Booking process ensures that customer requests are documented accurately, assigned to the appropriate technician, properly scheduled, and fully prepared before dispatch.
@@ -13,28 +30,42 @@ A properly booked job reduces delays, avoids scheduling conflicts, improves firs
 ## Job Booking Workflow
 
 ```text
-Customer Call
-      ↓
-Gather Information
-      ↓
-Verify Customer & Credit
-      ↓
-Verify Parts Availability
-      ↓
-Select Technician
-      ↓
-Reserve Time Slot
-      ↓
-Confirm Appointment
-      ↓
-Create / Update Work Order
-      ↓
-Assign Technician in FieldAware
-      ↓
+Receive customer call
+        ↓
+Gather information
+        ↓
+Determine job type
+        ↓
+Verify credit
+        ↓
+Verify parts
+        ↓
+Select technician
+        ↓
+Reserve time slot
+        ↓
+Customer approval
+        ↓
+Create work order
+        ↓
+Assign technician
+        ↓
 Dispatch
 ```
 
 ---
+
+# Receiving the Customer Call
+
+## Greeting
+
+Begin every customer interaction professionally.
+
+Suggested greeting:
+
+> "Cummins Service, my name is [your name], how may I help you today?"
+
+Before gathering information, have a notebook, paper, or digital document ready to record customer details and technical information.
 
 # Step 1 - Gather Customer Information
 
@@ -88,6 +119,8 @@ Examples of locations:
 - Remote site
 - Restricted-access site
 
+Also document any known safety concerns reported by the customer.
+
 ---
 
 ## Technical Information
@@ -112,6 +145,21 @@ Examples of useful descriptions:
 - ATS remains in utility position
 
 The more information collected, the easier technician selection becomes.
+
+### Automatic Transfer Switch (ATS) Calls
+
+For ATS-related issues, confirm:
+
+- Whether a simulated power outage can be performed.
+- The preferred testing window.
+
+### Non-Cummins Generators
+
+If the equipment is not manufactured by Cummins:
+
+- Inform the customer that a technician can still be dispatched.
+- Explain that the technician may not be certified on that specific equipment.
+- Advise that the customer may be referred to a specialized provider if required.
 
 ---
 
@@ -339,12 +387,13 @@ Purpose:
 
 Before dispatching:
 
-Confirm:
+Confirm with the customer:
 
 - Appointment date
 - Appointment time
 - Site accessibility
 - Contact information
+- Cost of the service
 
 ---
 
@@ -397,6 +446,18 @@ Access through loading dock.
 Parking available behind building.
 ```
 
+### Site Access Information
+
+Document any site-specific access requirements.
+
+Examples:
+
+- Roof access
+- Restricted access
+- Marine application
+- Mechanical room
+- Security escort required
+
 ---
 
 ## Coverage Section
@@ -444,6 +505,11 @@ Quote may vary once work has been completed.
 ---
 
 # Step 9 - Assign in FieldAware
+
+After customer approval:
+
+- Remove any temporary placeholder or customer hold created during scheduling.
+- Remove unnecessary reports before dispatching the work order.
 
 ## Technician Assignment
 
@@ -526,6 +592,23 @@ Before dispatching the job, verify:
 
 ---
 
+# Customer Approval
+
+Before dispatching the technician, ensure that the customer has approved the work.
+
+Approval may be received through:
+
+- A signed quotation.
+- Written email confirmation.
+
+Once approval is received:
+
+- Finalize the work order.
+- Dispatch the technician.
+- Update FieldAware accordingly.
+
+---
+
 # Common Booking Mistakes
 
 ## Missing On-Site Contact
@@ -600,3 +683,12 @@ The coordinator's objective is to ensure the technician arrives on site with:
 - The correct expectations
 
 The quality of the booking directly impacts the quality of the service experience.
+
+# Best Practices
+
+- Gather as much technical information as possible during the initial call.
+- Verify customer information before creating a work order.
+- Confirm technician suitability before assigning the job.
+- Verify parts availability before scheduling.
+- Clearly document site access requirements.
+- Maintain accurate FieldAware scheduling to avoid double-booking.

@@ -1,11 +1,17 @@
 """
 Service Coordinator Assistant
-Version 0.4.0
+Version 0.5.0
 Author: UD016
 
 Prototype AI assistant for Cummins Service Operations
 
 Change log:
+
+v0.5.0
+- Implemented session memory using the OpenAI Agents SDK SQLiteSession.
+    - Added a persistent session store for multi-turn conversations.
+    - Added a session_id parameter to ask_service_assistant().
+    - Kept lightweight retrieval and dynamic per-question context injection.
 
 v0.4.0
 - Switched from full knowledge-base injection to lightweight per-question retrieval.
@@ -36,7 +42,11 @@ from math import log
 from pathlib import Path
 import re
 
-from agents import Agent, Runner
+from agents import Agent, Runner, SQLiteSession
+
+
+# Set virtual environment (python -m venv [your environment name])
+# Set API Key (in PowerShell or PC environment)
 
 
 STOPWORDS = {
@@ -45,6 +55,9 @@ STOPWORDS = {
     "mean", "meaning", "tell", "me", "about", "please", "can", "you",
     "this", "that", "it"
 }
+
+SESSION_DB_PATH = Path("service_assistant_sessions.sqlite3")
+_SESSION_CACHE: dict[str, SQLiteSession] = {}
 
 
 @dataclass(frozen=True)
@@ -55,6 +68,9 @@ class Chunk:
 
 
 def normalize_text(text: str) -> str:
+    """
+    Normalize text for simple keyword matching.
+    """
     text = text.lower()
     text = re.sub(r"[^a-z0-9\s_-]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
@@ -62,6 +78,9 @@ def normalize_text(text: str) -> str:
 
 
 def tokenize(text: str) -> list[str]:
+    """
+    Tokenize text into simple word tokens.
+    """
     normalized = normalize_text(text)
     if not normalized:
         return []
@@ -69,6 +88,9 @@ def tokenize(text: str) -> list[str]:
 
 
 def tokenize_for_retrieval(text: str) -> list[str]:
+    """
+    Tokenize text and remove common stopwords.
+    """
     return [t for t in tokenize(text) if t not in STOPWORDS]
 
 
@@ -78,6 +100,7 @@ def extract_acronym(question: str) -> str | None:
     - What does FSPG stand for?
     - What is CSA?
     - Define FSPG
+    - Meaning of FSPG
     """
     patterns = [
         r"\bwhat does\s+([A-Z]{2,12})\s+stand for\b",
@@ -93,6 +116,14 @@ def extract_acronym(question: str) -> str | None:
 
 
 def split_markdown_into_chunks(text: str, max_words: int = 220) -> list[str]:
+    """
+    Split markdown into readable chunks.
+
+    Strategy:
+    - Prefer paragraph boundaries
+    - Keep chunks small enough for targeted retrieval
+    - Fall back to word-based splitting for oversized paragraphs
+    """
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
 
     chunks: list[str] = []
@@ -102,6 +133,7 @@ def split_markdown_into_chunks(text: str, max_words: int = 220) -> list[str]:
     for para in paragraphs:
         para_words = len(para.split())
 
+        # If one paragraph is too large, split it directly.
         if para_words > max_words:
             if current:
                 chunks.append("\n\n".join(current))
@@ -113,6 +145,7 @@ def split_markdown_into_chunks(text: str, max_words: int = 220) -> list[str]:
                 chunks.append(" ".join(words[i : i + max_words]))
             continue
 
+        # Start a new chunk if adding this paragraph would exceed the size cap.
         if current and current_word_count + para_words > max_words:
             chunks.append("\n\n".join(current))
             current = []
@@ -129,6 +162,11 @@ def split_markdown_into_chunks(text: str, max_words: int = 220) -> list[str]:
 
 @lru_cache(maxsize=1)
 def build_kb_index(path: str = "knowledge_base") -> tuple[Chunk, ...]:
+    """
+    Load and chunk all Markdown documents in the knowledge base.
+
+    Cached so it only runs once per process.
+    """
     kb_path = Path(path)
     if not kb_path.exists():
         return tuple()
@@ -158,6 +196,9 @@ def build_kb_index(path: str = "knowledge_base") -> tuple[Chunk, ...]:
 
 
 def score_chunk(question: str, chunk: Chunk) -> float:
+    """
+    Score a chunk using simple keyword overlap plus acronym boosts.
+    """
     qtokens = tokenize_for_retrieval(question)
     if not qtokens:
         return 0.0
@@ -201,6 +242,9 @@ def retrieve_relevant_chunks(
     kb_index: tuple[Chunk, ...],
     top_k: int = 4,
 ) -> list[Chunk]:
+    """
+    Return the most relevant chunks for a question.
+    """
     scored: list[tuple[float, Chunk]] = []
 
     for chunk in kb_index:
@@ -226,6 +270,9 @@ def retrieve_relevant_chunks(
 
 
 def format_retrieved_context(chunks: list[Chunk], max_chars: int = 12000) -> str:
+    """
+    Format retrieved chunks for insertion into the agent instructions.
+    """
     if not chunks:
         return "No relevant knowledge base excerpts were found."
 
@@ -240,6 +287,20 @@ def format_retrieved_context(chunks: list[Chunk], max_chars: int = 12000) -> str
         total_chars += len(block)
 
     return "\n\n---\n\n".join(sections)
+
+
+def get_session(session_id: str = "default_service_chat") -> SQLiteSession:
+    """
+    Return a stable SQLiteSession for a given conversation ID.
+
+    For a Streamlit app, pass a stable per-chat session_id from app.py.
+    """
+    if session_id not in _SESSION_CACHE:
+        _SESSION_CACHE[session_id] = SQLiteSession(
+            session_id=session_id,
+            db_path=SESSION_DB_PATH,
+        )
+    return _SESSION_CACHE[session_id]
 
 
 def build_agent(question: str) -> Agent:
@@ -298,17 +359,23 @@ Knowledge excerpts:
     )
 
 
+# Interactive questions
+
 # Public function used by the Streamlit application
-def ask_service_assistant(question: str) -> str:
+def ask_service_assistant(question: str, session_id: str = "default_service_chat") -> str:
     """
     Send a question to the Service Coordinator Assistant
     and return the response.
+
+    Pass a stable session_id per chat so follow-up questions keep context.
     """
     agent = build_agent(question)
+    session = get_session(session_id=session_id)
 
     result = Runner.run_sync(
         agent,
         question,
+        session=session,
     )
 
     return result.final_output
@@ -317,6 +384,9 @@ def ask_service_assistant(question: str) -> str:
 if __name__ == "__main__":
     print("Service Coordinator Assistant")
     print("Type 'quit' to exit.\n")
+
+    # One conversation in terminal mode
+    terminal_session_id = "terminal_chat"
 
     while True:
         question = input("Ask a service question: ").strip()
@@ -328,5 +398,5 @@ if __name__ == "__main__":
             continue
 
         print()
-        print(ask_service_assistant(question))
+        print(ask_service_assistant(question, session_id=terminal_session_id))
         print()

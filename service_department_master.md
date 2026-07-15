@@ -1,15 +1,23 @@
 # Service Department Master File
 
-# Version 1.0.2
+# Version 1.0.3
 
-# Last Updated: 2026-07-10
+# Last Updated: 2026-07-15
 
 # Updated By: Jipeng Li
 
 # Change Log:
 
+v1.0.3
+- Added purpose 
+- Moved the file out of knowledge base retrieval folder
+
 v1.0.2
 - Added cloning work order 
+
+# Purpose
+
+To be used as a global reference for departmental knowledge. No longer read and retrieved by the AI assistant, for human eyes only.
  
 ---
 

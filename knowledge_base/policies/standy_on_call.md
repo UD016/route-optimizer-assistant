@@ -1,12 +1,15 @@
 # Standby (On-Call) Procedure
 
-# Version 1.0.0
+# Version 1.0.1
 
-# Last Updated: 2026-07-10
+# Last Updated: 2026-07-15
 
 # Updated By: Jipeng Li
 
 # Change Log:
+
+v1.0.1
+- Added specification that both technicians and service administrators are eligible for the on-call compensation.
 
 v1.0.0
 - Creation of initial document.
@@ -85,6 +88,7 @@ If after-hours calls are not being routed correctly:
 ### Weekly Standby Premium
 
 The weekly standby premium has been increased from **$200** to **$235**.
+This weekly stanby premium is applicable to both technicians and service administrators.
 
 The standby premium consists of:
 
