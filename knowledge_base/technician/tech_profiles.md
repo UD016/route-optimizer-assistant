@@ -401,7 +401,7 @@ Not documented.
 
 ## Not Suitable For
 
-Les Entrepots Frigoriques. 
+Les Entrepots Frigorifiques. 
 
 ## Operational Notes
 

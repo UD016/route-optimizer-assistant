@@ -20,6 +20,12 @@
 #   [FAIBLE-2]  _norm_base/_normalize_base_job_id : une seule fonction au niveau module
 #   [FAIBLE-3]  _choose_onsite_no_crumbs : une seule fonction au niveau module
 
+"""
+- Added service assistant integration
+- Added conversation memory feature 
+    - Each conversation clear leads to a clean slate
+"""
+
 import os
 import re
 import math
@@ -38,6 +44,8 @@ import googlemaps
 import polyline
 import folium
 from streamlit_folium import st_folium
+
+import uuid
 
 import pandas as pd
 import requests
@@ -954,12 +962,18 @@ def render_service_assistant():
             {"role": "assistant", "content": "Bonjour — posez votre question."}
         ]
 
+    if "assistant_session_id" not in st.session_state:
+        st.session_state.assistant_session_id = str(uuid.uuid4())
+
     clear_col, _ = st.columns([1, 5])
     with clear_col:
         if st.button("🗑️ Clear conversation", key="assistant_clear"):
             st.session_state.assistant_messages = [
                 {"role": "assistant", "content": "Bonjour — posez votre question."}
             ]
+            
+            # Start a brand-new conversation
+            st.session_state.assistant_session_id = str(uuid.uuid4())
             st.rerun()
 
     for msg in st.session_state.assistant_messages:
@@ -976,7 +990,10 @@ def render_service_assistant():
         with st.chat_message("assistant"):
             with st.spinner("Analyzing request..."):
                 try:
-                    answer = ask_service_assistant(question)
+                    answer = ask_service_assistant(
+                        question = question,
+                        session_id = st.session_state.assistant_session_id,
+                    )
                 except Exception as e:
                     answer = f"Sorry — I hit an error: {type(e).__name__}: {e}"
                 st.markdown(answer)
