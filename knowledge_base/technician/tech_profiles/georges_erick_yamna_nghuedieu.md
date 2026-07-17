@@ -25,7 +25,7 @@ This file does not recommend dispatch assignments. Technician selection logic be
 
 ## Summary
 
-Field technician supporting Laval operations with experience in preventive maintenance, generator controls, and general service.
+Field technician supporting Laval and North Shore operations with experience in preventive maintenance, generator controls, and general service.
 
 ## Primary Territories
 
@@ -42,20 +42,29 @@ Field technician supporting Laval operations with experience in preventive maint
 
 ## Cummins Training & Qualifications
 
-- Controls
-- ATS
-- PCC 2100
-- PCC 3100
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2000-20Q: InPower Software Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2001-28Q: PCC 2100 Qualification
+- 2015-20Q: Network Communication RS 485 PCC Net and Modbus Full Service
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
 
-## Security Clearances
+## Certifications
 
-- Not documented.
+- None
 
 ## Work Preferences
 
-- Preventive Maintenance: Yes
+- Travel: No
 - Overtime: Yes
-- Travel: Yes
+- Engine Work: No
+- Projects / Commissioning: No
+- Preventive Maintenance: Yes
 
 ## Operational Notes
 

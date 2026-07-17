@@ -47,16 +47,27 @@ Senior technical leader specializing in commissioning, advanced troubleshooting,
 
 ## Cummins Training & Qualifications
 
-- Complete Controls Path
-- ATS Qualifications
-- Alternator Qualification
-- PCC 2100
-- PCC 3100
-- PCC 3200/3201
-- NSPS Qualification
-- PC3.X 3300 Qualification
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2006-13Q: BETT Updated Qualification
+- 2000-20Q: InPower Software Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2013-21Q: P0 / P1 and S0 / S1 Generator Frame Repair
+- 2001-28Q: PCC 2100 Qualification
+- 2015-20Q: Network Communication RS 485 PCC Net and Modbus Full Service
+- 2002-44Q: PCC 3100 Qualification
+- 2000-19Q: PCC 3200-3201 Qualification
+- 2009-43Q: NSPS (New Source Performance Standard) Qualification
+- 2013-11Q: PC 3.X 3300 Full Service Qualifications
+- 2011-08Q: BTPC 1600-3000 Amper Transfer Switch Mechanism Qualification
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
+- 2001-29Q
 
-## Security Clearances
+## Certifications
 
 - Secret Level II
 - Secret Level III
@@ -70,7 +81,7 @@ Senior technical leader specializing in commissioning, advanced troubleshooting,
 - Overtime: Yes
 - Engine Work: Yes
 - Projects / Commissioning: Yes
-- Preventive Maintenance: As Required
+- Preventive Maintenance: Neutral
 
 ## Not Suitable For
 

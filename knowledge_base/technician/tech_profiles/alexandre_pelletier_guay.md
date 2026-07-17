@@ -43,15 +43,17 @@ Experienced field technician specializing in large-scale projects, commissioning
 
 ## Cummins Training & Qualifications
 
-- Load Bank & PM
-- NFPA 70E and Cummins Safe Electrical Procedure
-- Fundamentals of Controls (PC1.X 1302)
-- Fundamentals of ATS (OTEC Transfer Switch)
-- BETT Updated Qualification
-- PCC 2100 Qualification
-- Network Communication RS 485 PCC Net and Modbus Full Service
-- PC 3.X 3300 Full Service Qualifications
-- OTPC Transfer Switch Qualification
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2006-13Q: BETT Updated Qualification
+- 2001-28Q: PCC 2100 Qualification
+- 2015-20Q: Network Communication RS 485 PCC Net and Modbus Full Service
+- 2013-11Q: PC 3.X 3300 Full Service Qualifications
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
+- 2001-29Q
 
 ## Certifications
 

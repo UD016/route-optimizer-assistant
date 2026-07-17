@@ -43,22 +43,29 @@ Senior diagnostic specialist recognized as one of the branch's strongest trouble
 
 ## Cummins Training & Qualifications
 
-- Controls
-- ATS
-- PCC 2100
-- PCC 3100
-- NSPS Qualification
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2006-13Q: BETT Updated Qualification
+- 2000-20Q: InPower Software Qualification
+- 2001-28Q: PCC 2100 Qualification
+- 2015-20Q: Network Communication RS 485 PCC Net and Modbus Full Service
+- 2013-11Q: PC 3.X 3300 Full Service Qualifications
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
 
-## Security Clearances
+## Certifications
 
 - Secret Level II
 
 ## Work Preferences
 
+- Travel: No
+- Overtime: No
 - Engine Work: Yes
 - Projects / Commissioning: Yes
 - Preventive Maintenance: No
-- Overtime: No
 
 ## Awards
 

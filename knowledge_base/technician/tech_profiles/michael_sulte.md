@@ -48,17 +48,24 @@ Field technician specializing in electrical troubleshooting, wiring, cabling, an
 
 ## Cummins Training & Qualifications
 
-- Controls
-- ATS
-- Alternator Qualification
-- InPower Software
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2000-20Q: InPower Software Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2013-21Q: P0 / P1 and S0 / S1 Generator Frame Repair
+- 2001-28Q: PCC 2100 Qualification
+
+## Certifications
+
+- None
 
 ## Work Preferences
 
-- Preventive Maintenance: Yes
-- Electrical Work: Preferred
-- Travel: Yes
+- Travel: No
 - Overtime: Yes
+- Engine Work: No
+- Projects / Commissioning: No
+- Preventive Maintenance: Yes
 
 ## Operational Notes
 

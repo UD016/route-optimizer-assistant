@@ -43,20 +43,30 @@ Field technician supporting Laval and surrounding areas with a focus on maintena
 
 ## Cummins Training & Qualifications
 
-- Controls
-- ATS
-- Alternator Qualification
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2006-13Q: BETT Updated Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2002-44Q: PCC 3100 Qualification
+- 2009-43Q: NSPS (New Source Performance Standard) Qualification
+- 2013-11Q: PC 3.X 3300 Full Service Qualifications
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
 
-## Security Clearances
+## Certifications
 
-- Not documented.
+- None
 
 ## Work Preferences
 
+- Travel: No
+- Overtime: Yes
 - Engine Work: Yes
 - Projects / Commissioning: Yes
-- Overtime: Yes
-- Travel: Yes
+- Preventive Maintenance: Neutral
 
 ## Operational Notes
 

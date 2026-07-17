@@ -43,21 +43,32 @@ Senior engine specialist with extensive experience in engine diagnostics, repair
 
 ## Cummins Training & Qualifications
 
-- Controls
-- ATS
-- Alternator Qualification
-- PCC 2100
-- PCC 3100
+- 2018-14Q: Load Bank & PM
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2008-14Q: Fundamentals of ATS (OTEC Transfer Switch)
+- 2006-13Q: BETT Updated Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2001-28Q: PCC 2100 Qualification
+- 2015-20Q: Network Communication RS 485 PCC Net and Modbus Full Service
+- 2009-43Q: NSPS (New Source Performance Standard) Qualification
+- 2013-11Q: PC 3.X 3300 Full Service Qualifications
+- 2000-18Q: OTPC Transfer Switch Qualification
+- 2019-48Q
+- 2001-29Q
 
-## Security Clearances
+## Certifications
 
-- Not documented.
+- None
 
 ## Work Preferences
 
+- Travel: No
+- Overtime: No
 - Engine Work: Yes
 - Projects / Commissioning: Yes
-- Travel: Yes
+- Preventive Maintenance: No
 
 ## Operational Notes
 

@@ -34,15 +34,27 @@ In-shop technician specializing in electric bus service and repair operations.
 
 ## Cummins Training & Qualifications
 
-- Not documented.
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
+- 2008-08Q: Fundamentals of Controls (PC1.X 1302)
+- 2006-13Q: BETT Updated Qualification
+- 2000-20Q: InPower Software Qualification
+- 2014-39Q: Fundamentals of Alternator / Alternator Repair
+- 2013-23Q: UC / HC / S4 / S5 / S6 Generator Frame Repair
+- 2013-21Q: P0 / P1 and S0 / S1 Generator Frame Repair
+- 2001-28Q: PCC 2100 Qualification
 
-## Security Clearances
+## Certifications
 
-- Not documented.
+- None
 
 ## Work Preferences
 
 - Shop Work Only: Yes
+- Travel: No
+- Overtime: No
+- Engine Work: N0
+- Projects / Commissioning: No
+- Preventive Maintenance: No
 
 ## Not Suitable For
 

@@ -40,17 +40,19 @@ Developing field technician focused primarily on preventive maintenance and rout
 
 ## Cummins Training & Qualifications
 
-- Not documented.
+- 2018-15Q: NFPA 70E and Cummins Safe Electrical Procedure
 
-## Security Clearances
+## Certifications
 
-- Not documented.
+- None
 
 ## Work Preferences
 
-- Preventive Maintenance: Yes
 - Travel: Yes
-- Overtime: As Required
+- Overtime: Neutral
+- Engine Work: No
+- Projects / Commissioning: No
+- Preventive Maintenance: Yes
 
 ## Not Suitable For
 
