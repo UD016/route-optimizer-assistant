@@ -1,34 +1,45 @@
 # Technician Profile: Louis Lauzon
 
 Version: 2.0.0
-Last Updated: 2026-07-16
+Last Updated: 2026-07-20
 Owner: UD016
 Source Document: user-requested placeholder
+Region Group: South Shore
 
 ## Purpose
 
-This file is included because Louis Lauzon was requested, but no source profile data for him was present in the uploaded technician profile document.
+This file provides factual reference information for one technician in the Cummins service branch.
+
+It is intended to support retrieval for technician capability questions, territory coverage, qualifications, work preferences, and operational constraints.
+
+This file does not recommend dispatch assignments. Technician selection logic belongs in technician_selection_rules.md.
 
 ## Metadata
 
-- Home Location: Not documented
-- Field Service Status: Not documented
-- Experience: Not documented
-- Experience Level: Not documented
-- Role Type: Not documented
-- Branch Region: Not documented
+- Home Location: Saint-Hubert
+- Field Service Status: Field Technician
+- Experience: 40+ Years
+- Experience Level: Senior
+- Role Type: Field Technician
+- Branch Region: South Shore
 
 ## Summary
 
-Profile data not provided in the source material.
+Louis Lauzon is a highly experienced senior field technician with more than 40 years of field service experience. Based on the South Shore, he primarily supports routine service work and preventive maintenance throughout his coverage area. As he approaches retirement, he is generally assigned standard field service activities and is only dispatched to complex troubleshooting or project work when operationally necessary.
 
 ## Primary Territories
 
-- South Shore
+- South Shore and surrounding areas
 
 ## Service Capabilities
 
-- Not documented
+- General field service
+- Preventive maintenance
+- Routine generator repairs
+- Scheduled service calls
+- Customer support within South Shore territory
+
+May assist with advanced troubleshooting or specialized work when required by operational needs.
 
 ## Cummins Training & Qualifications
 
@@ -66,12 +77,22 @@ Profile data not provided in the source material.
 
 ## Not Suitable For
 
-- Work on Thursdays and Fridays.
+- Large commissioning projects
+- Complex technical investigations
+- Extended travel outside the South Shore territory
+
+Operational scheduling preference:
+
+- Avoid scheduling on **Thursdays and Fridays** unless operational requirements make it necessary.
 
 ## Operational Notes
 
-Please provide Louis Lauzon's technician details if this file should be completed.
+- One of the branch's most senior field technicians with over 40 years of field experience.
+- Primarily services customers throughout the South Shore corridor.
+- Preferred coverage area extends from **Beloeil to Châteauguay**.
+- Schedule Thursday and Friday assignments only when additional field coverage is required.
+- Consider Louis first for routine South Shore service work and preventive maintenance where his territory knowledge provides value.
 
 ## Search Keywords
 
-Louis Lauzon, technician, profile, placeholder
+Louis Lauzon, South Shore, Beloeil, Châteauguay, preventive maintenance, routine service, senior technician, field technician
