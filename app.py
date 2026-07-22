@@ -953,13 +953,15 @@ def render_page_1():
         st.success(f"**Total distance:** {km:.1f} km • **Total time:** {mins:.0f} mins (live traffic)")
 
 
+# Service Assistant Addition
+
 def render_service_assistant():
     st.markdown("### 🤖 Service Coordinator Assistant")
     st.caption("Ask dispatch, technician selection, booking, troubleshooting, and invoicing questions.")
 
     if "assistant_messages" not in st.session_state:
         st.session_state.assistant_messages = [
-            {"role": "assistant", "content": "Bonjour — posez votre question."}
+            {"role": "assistant", "content": "Bonjour — Posez une question. Hi — Ask a question."}
         ]
 
     if "assistant_session_id" not in st.session_state:
@@ -969,7 +971,7 @@ def render_service_assistant():
     with clear_col:
         if st.button("🗑️ Clear conversation", key="assistant_clear"):
             st.session_state.assistant_messages = [
-                {"role": "assistant", "content": "Bonjour — posez votre question."}
+                {"role": "assistant", "content": "Bonjour — Posez une question. Hi — Ask a question."}
             ]
             
             # Start a brand-new conversation

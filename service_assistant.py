@@ -84,14 +84,14 @@ TECHNICAL_QUERY_HINTS = {
 }
 
 
-@dataclass(frozen=True)
+@dataclass(frozen = True)
 class Chunk:
     source: str
     text: str
     token_set: frozenset[str]
 
 
-@dataclass(frozen=True)
+@dataclass(frozen = True)
 class EmbeddedChunk:
     source: str
     text: str
@@ -141,7 +141,7 @@ def extract_acronym(question: str) -> str | None:
         r"\bmeaning of\s+([A-Z]{2,12})\b",
     ]
     for pattern in patterns:
-        match = re.search(pattern, question, flags=re.IGNORECASE)
+        match = re.search(pattern, question, flags = re.IGNORECASE)
         if match:
             return match.group(1).upper()
     return None
@@ -203,7 +203,7 @@ def file_signature(file_path: Path) -> tuple[str, int, int]:
     return (str(file_path.relative_to(KNOWLEDGE_BASE_PATH)), stat.st_mtime_ns, stat.st_size)
 
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize = 1)
 def build_chunk_index(path: str = "knowledge_base") -> tuple[Chunk, ...]:
     """
     Load and chunk all Markdown documents in the active knowledge base.
@@ -216,7 +216,7 @@ def build_chunk_index(path: str = "knowledge_base") -> tuple[Chunk, ...]:
 
     for file in sorted(kb_path.rglob("*.md")):
         try:
-            text = file.read_text(encoding="utf-8")
+            text = file.read_text(encoding = "utf-8")
         except Exception:
             continue
 
@@ -227,9 +227,9 @@ def build_chunk_index(path: str = "knowledge_base") -> tuple[Chunk, ...]:
             searchable_text = f"{relative_source}\n{file_stem}\n{chunk_text}"
             chunks.append(
                 Chunk(
-                    source=relative_source,
-                    text=chunk_text,
-                    token_set=frozenset(tokenize(searchable_text)),
+                    source = relative_source,
+                    text = chunk_text,
+                    token_set = frozenset(tokenize(searchable_text)),
                 )
             )
 
@@ -266,9 +266,9 @@ def embed_texts(texts: list[str], batch_size: int = 64) -> list[tuple[float, ...
     for i in range(0, len(texts), batch_size):
         batch = texts[i : i + batch_size]
         response = OPENAI_CLIENT.embeddings.create(
-            model=EMBEDDING_MODEL,
-            input=batch,
-            encoding_format="float",
+            model = EMBEDDING_MODEL,
+            input = batch,
+            encoding_format = "float",
         )
 
         ordered = sorted(response.data, key=lambda item: item.index)
@@ -306,7 +306,7 @@ def write_embedding_cache(
     """
     Persist the embedding index for faster startup on future runs.
     """
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    CACHE_DIR.mkdir(parents = True, exist_ok = True)
 
     payload = {
         "signature": signature,
@@ -347,10 +347,10 @@ def build_embedding_index(path: str = "knowledge_base") -> tuple[EmbeddedChunk, 
 
     embedded_chunks = tuple(
         EmbeddedChunk(
-            source=chunk.source,
-            text=chunk.text,
-            token_set=chunk.token_set,
-            vector=vector,
+            source = chunk.source,
+            text = chunk.text,
+            token_set = chunk.token_set,
+            vector = vector,
         )
         for chunk, vector in zip(base_chunks, vectors)
     )
@@ -410,7 +410,7 @@ def retrieve_relevant_chunks(
         score = score_chunk_embedding(question, question_vector, chunk)
         scored.append((score, chunk))
 
-    scored.sort(key=lambda item: item[0], reverse=True)
+    scored.sort(key = lambda item: item[0], reverse = True)
     return [chunk for _, chunk in scored[:top_k]]
 
 
@@ -452,7 +452,7 @@ def build_agent(question: str) -> Agent:
     relevant_chunks = retrieve_relevant_chunks(question, kb_index, top_k=top_k)
     retrieved_context = format_retrieved_context(relevant_chunks)
 
-    instructions = f"""
+    human_instructions = f"""
 You are the Service Coordinator Assistant for the Cummins service department.
 
 Your purpose is to help service coordinators perform their work accurately and efficiently by answering questions, explaining procedures, assisting with dispatch decisions, and providing invoicing guidance.
@@ -494,9 +494,9 @@ Knowledge excerpts:
 """.strip()
 
     return Agent(
-        name="Service Coordinator Assistant",
-        model="gpt-5.6-terra",
-        instructions=instructions,
+        name = "Service Coordinator Assistant",
+        model = "gpt-5.6-terra",
+        instructions = human_instructions,
     )
 
 
@@ -512,7 +512,7 @@ def ask_service_assistant(question: str, session_id: str = "default_service_chat
     result = Runner.run_sync(
         agent,
         question,
-        session=session,
+        session = session,
     )
 
     return result.final_output
@@ -534,5 +534,5 @@ if __name__ == "__main__":
             continue
 
         print()
-        print(ask_service_assistant(question, session_id=terminal_session_id))
+        print(ask_service_assistant(question, session_id = terminal_session_id))
         print()
