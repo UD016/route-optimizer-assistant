@@ -271,7 +271,7 @@ def embed_texts(texts: list[str], batch_size: int = 64) -> list[tuple[float, ...
             encoding_format = "float",
         )
 
-        ordered = sorted(response.data, key=lambda item: item.index)
+        ordered = sorted(response.data, key = lambda item: item.index)
         vectors.extend(tuple(item.embedding) for item in ordered)
 
     return vectors

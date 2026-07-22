@@ -204,12 +204,3 @@ The coordinator must manually enter the appropriate rate using the current branc
 - Double-check the quotation or invoice after entering overtime.
 
 ---
-
-# Related Documents
-
-- coordinator_quote_management.md
-- coordinator_invoicing.md
-- coordinator_mobile_service_hourly_rates.md
-- coordinator_ottawa_mobile_service_hourly_rates.md
-- coordinator_candiac_in_shop_service_hourly_rates.md
-- coordinator_ottawa_in_shop_service_hourly_rates.md
